@@ -48,6 +48,7 @@ class Blog extends Component {
         if(this.state.isLoading || this.state.blogItems.length === this.state.totalCount ) {
             return;
         }
+        //console.log("Inner height:" + window.innerHeight + "\nscrollTop: " + document.documentElement.scrollTop + "\noffsetHeight: " + document.documentElement.offsetHeight + "\nShould be 0: " + (window.innerHeight + document.documentElement.scrollTop - document.documentElement.offsetHeight));
         if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
             this.getBlogItems();
         }
