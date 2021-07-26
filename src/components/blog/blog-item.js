@@ -18,7 +18,7 @@ const BlogItem = props => {
             </Link>
             
             <div>
-                <Truncate lines={5} ellipsis={
+                <Truncate lines={3} ellipsis={
                     <span>
                         ... <Link to={`/b/${id}`}>Read More</Link>
                     </span>
